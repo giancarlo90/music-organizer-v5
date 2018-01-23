@@ -186,4 +186,14 @@ public class MusicOrganizer
             }
         }
     }
+
+    /**
+     * Fijar el año de publicacion de un track
+     */
+    public void fijarAno(int index, int ano)
+    {
+        if (index >= 0 && index < tracks.size()){
+            tracks.get(index).setAno(ano);
+        }
+    }
 }
