@@ -73,7 +73,7 @@ public class Track
      */
     public String getDetails()
     {
-        return artist + ": " + title + "  (file: " + filename + ")";
+        return artist + ": " + title + "  (file: " + filename + ")" + ".Reproducciones: " + playCount;
     }
 
     /**
@@ -92,7 +92,7 @@ public class Track
     /**
      * Incrementar el contador
      */
-    private void contadorMasUno()
+    public void contadorMasUno()
     {
         playCount++;
     }
@@ -100,7 +100,7 @@ public class Track
     /**
      * Restaurar el contador a 0
      */
-    private void contadorACero()
+    public void contadorACero()
     {
         playCount = 0;
     }
